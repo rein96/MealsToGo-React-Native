@@ -1,4 +1,6 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components/native'
+import { theme } from './src/infrastructure';
 import RestaurantScreen from './src/screen/restaurant/RestaurantScreen';
 
 
@@ -11,7 +13,9 @@ export default function App() {
 
 
   return (
-    <RestaurantScreen />
+    <ThemeProvider theme={theme}>
+      <RestaurantScreen />
+    </ThemeProvider>
   );
 }
 

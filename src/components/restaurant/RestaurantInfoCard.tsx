@@ -18,6 +18,7 @@ const RestaurantCover = styled(Card.Cover)`
 
 const Title = styled(Text)`
   padding: 16px;
+  color: ${(props) => props.theme.colors.ui.primary}
 `
 
 const RestaurantInfoCard: React.FC<RestaurantInfoCardProps> = ({ restaurant = {} }) => {
